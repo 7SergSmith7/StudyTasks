@@ -4,70 +4,58 @@ namespace Калькулятор_через_классы
 {
     class AddArgument
     {
-        double argument;
-
-        public void SetAgrument(string value)
-        {
-
-            argument = Convert.ToDouble(value);
-        }
-        public double GetArgument()
-        {
-            return argument;
-        }
+       public double Argument { get; set;}
     }
 
-    class Result
+    class Calculator
     {
-        double a;
-        double b;
-        string sign;
-        double result;
-        
-
-        public void SetResult(double firstArgument, double secondArgument, string operationsign )
+        static public double Add(double firstArgument, double secondArgument)
         {
-            a = firstArgument;
-            b = secondArgument;
-            sign = operationsign;
-            
-
-            switch (operationsign)
-            {
-                case "+":
-                    result = firstArgument + secondArgument;
-                    break;
-                case "-":
-                    result = firstArgument - secondArgument;
-                    break;
-                case "/":
-                    result = firstArgument / secondArgument;
-                    break;
-                case "*":
-                    result = firstArgument * secondArgument;
-                    break;
-
-            }
+            return firstArgument + secondArgument;
         }
-        public void GetResult()
+        static public double Minus(double firstArgument, double secondArgument)
         {
-            Console.WriteLine($"{a}{sign}{b}={result}");
+            return firstArgument - secondArgument;
+        }
+        static public double Multi(double firstArgument, double secondArgument)
+        {
+            return firstArgument * secondArgument;
+        }
+        static public double Division(double firstArgument, double secondArgument)
+        {
+            return firstArgument / secondArgument;
         }
     }
+        
     class Program
     {
         static void Main(string[] args)
         {
             AddArgument firstArgument = new AddArgument();
             AddArgument secondArgument = new AddArgument();
-            Result resultTask = new Result();
+            Calculator calculator = new Calculator();
             Console.WriteLine("Введите Первый аргумент");
-            firstArgument.SetAgrument( Console.ReadLine());
+            firstArgument.Argument = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите Второй аргумент");
-            secondArgument.SetAgrument(Console.ReadLine());
+            secondArgument.Argument = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите Операцию (+,-,/,*)");
-            resultTask.SetResult(firstArgument.GetArgument(), secondArgument.GetArgument(), Console.ReadLine());
-            resultTask.GetResult();
+            string operationsign = Console.ReadLine();
+            switch (operationsign)
+            {
+                case "+":
+                    Console.WriteLine($"{firstArgument.Argument}+{secondArgument.Argument}={Calculator.Add(firstArgument.Argument, secondArgument.Argument)}");
+                    break;
+                case "-":
+                        Console.WriteLine($"{firstArgument.Argument}-{secondArgument.Argument}={Calculator.Minus(firstArgument.Argument, secondArgument.Argument)}");
+                        break;
+                case "/":
+                        Console.WriteLine($"{firstArgument.Argument}/{secondArgument.Argument}={Calculator.Division(firstArgument.Argument, secondArgument.Argument)}");
+                        break;
+                case "*":
+                        Console.WriteLine($"{firstArgument.Argument}*{secondArgument.Argument}={Calculator.Multi(firstArgument.Argument, secondArgument.Argument)}");
+                        break;
+
+            }
         }
     }
 }
