@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\bin\Debug\netcoreapp2.1\Калькулятор через классы.deps.json
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\bin\Debug\netcoreapp2.1\Калькулятор через классы.runtimeconfig.json
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\bin\Debug\netcoreapp2.1\Калькулятор через классы.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\bin\Debug\netcoreapp2.1\Калькулятор через классы.dll
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\bin\Debug\netcoreapp2.1\Калькулятор через классы.pdb
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.dll
+C:\Users\Admin\source\repos\Калькулятор через классы\Калькулятор через классы\obj\Debug\netcoreapp2.1\Калькулятор через классы.pdb
