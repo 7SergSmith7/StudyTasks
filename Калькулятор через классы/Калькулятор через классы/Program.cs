@@ -33,7 +33,6 @@ namespace Калькулятор_через_классы
         {
             AddArgument firstArgument = new AddArgument();
             AddArgument secondArgument = new AddArgument();
-            Calculator calculator = new Calculator();
             Console.WriteLine("Введите Первый аргумент");
             firstArgument.Argument = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите Второй аргумент");
